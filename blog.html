@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="erzincan diş hekimi blog, erzincan diş sağlığı, dt mustafa çınar makaleleri, erzincan diş kliniği, diş implant bilgi, diş beyazlatma bilgi">
+<meta name="author" content="Dt. Mustafa ÇINAR">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://erzincandishekimi.com.tr/blog">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Erzincan Diş Hekimi – Dt. Mustafa ÇINAR">
+<meta property="og:title" content="Erzincan Diş Hekimi Blog | Dt. Mustafa ÇINAR – Diş Sağlığı Makaleleri">
+<meta property="og:description" content="Erzincan diş hekimi Dt. Mustafa ÇINAR'ın hazırladığı diş sağlığı makaleleri. İmplant, diş beyazlatma, ortodonti hakkında uzman bilgisi.">
+<meta property="og:url" content="https://erzincandishekimi.com.tr/blog">
+<title>Erzincan Diş Hekimi Blog | Dt. Mustafa ÇINAR – Diş Sağlığı Makaleleri</title>
+<meta name="description" content="Erzincan diş hekimi Dt. Mustafa ÇINAR'ın hazırladığı diş sağlığı makaleleri. İmplant, diş beyazlatma, ortodonti ve daha fazlası. 0446 224 10 89">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink-900:#07111f;--ink-800:#0f2137;--ink-700:#1a3352;
+  --blue:#3b9eff;--blue-lt:#60b3ff;--blue-dim:rgba(59,158,255,.12);
+  --cyan:#22d3ee;--teal:#10b981;
+  --surface:#ffffff;--surf-2:#f6faff;--surf-3:#eaf2ff;
+  --muted:#64748b;--muted-lt:#94a3b8;
+  --border:rgba(59,158,255,.14);--border-md:rgba(59,158,255,.25);
+  --r-sm:10px;--r:16px;--r-lg:24px;--r-xl:32px;
+  --shadow-sm:0 2px 12px rgba(7,17,31,.08);
+  --shadow:0 8px 40px rgba(7,17,31,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink-900);background:#fff;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 5%;height:68px;background:rgba(255,255,255,.85);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--border);}
+.nav-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;color:var(--ink-900);}
+.nav-brand .icon{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;}
+.nav-brand .icon svg{width:18px;height:18px;fill:#fff;}
+.nav-brand .line2{font-size:11px;font-weight:400;color:var(--muted);margin-top:1px;}
+.nav-pill{list-style:none;display:flex;gap:2px;background:var(--surf-3);border:1px solid var(--border);border-radius:40px;padding:5px;}
+.nav-pill li a{display:block;padding:6px 14px;border-radius:30px;font-size:13px;font-weight:500;color:var(--muted);transition:.2s;}
+.nav-pill li a:hover,.nav-pill li a.active{background:#fff;color:var(--ink-900);box-shadow:var(--shadow-sm);}
+.nav-actions{display:flex;align-items:center;gap:10px;justify-content:flex-end;}
+.nav-tel{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:var(--ink-700);}
+.nav-tel svg{width:14px;height:14px;fill:var(--blue);}
+.nav-cta{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;padding:9px 18px;border-radius:30px;font-size:13px;font-weight:700;}
+
+/* HERO KÜÇÜK */
+.blog-hero{background:linear-gradient(135deg,var(--ink-900) 0%,var(--ink-800) 100%);padding:72px 6% 60px;text-align:center;}
+.blog-hero .chip{display:inline-flex;align-items:center;gap:6px;background:rgba(59,158,255,.15);border:1px solid rgba(59,158,255,.3);border-radius:30px;padding:5px 14px;font-size:12px;font-weight:600;color:var(--blue-lt);margin-bottom:18px;}
+.blog-hero .chip .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.blog-hero h1{font-size:clamp(2rem,5vw,3rem);font-weight:900;letter-spacing:-1.5px;color:#fff;line-height:1.1;margin-bottom:14px;}
+.blog-hero h1 span{background:linear-gradient(135deg,var(--blue),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.blog-hero p{font-size:16px;color:rgba(255,255,255,.5);max-width:520px;margin:0 auto;}
+
+/* FİLTRE */
+.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:8px;padding:36px 6% 0;}
+.filters button{background:#fff;border:1px solid var(--border);border-radius:30px;padding:8px 18px;font-size:13px;font-weight:500;color:var(--muted);cursor:pointer;transition:.2s;}
+.filters button.active,.filters button:hover{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;border-color:transparent;}
+
+/* GRID */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;max-width:1140px;margin:40px auto 80px;padding:0 6%;}
+.bc{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;transition:.25s;cursor:pointer;}
+.bc:hover{transform:translateY(-4px);box-shadow:var(--shadow);}
+.bc-img{height:160px;position:relative;overflow:hidden;}
+.bc-img-bg{position:absolute;inset:0;}
+.bc-img-icon{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:52px;}
+.bc-badge{position:absolute;bottom:12px;left:14px;background:rgba(0,0,0,.45);backdrop-filter:blur(8px);color:#fff;font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;}
+.bc-body{padding:20px;}
+.bc-body h3{font-size:16px;font-weight:700;color:var(--ink-900);line-height:1.4;margin-bottom:8px;}
+.bc-body p{font-size:13.5px;color:var(--muted);line-height:1.65;margin-bottom:16px;}
+.bc-foot{display:flex;align-items:center;justify-content:space-between;}
+.bc-author{display:flex;align-items:center;gap:8px;}
+.bc-av{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff;}
+.bc-an{font-size:12px;font-weight:600;color:var(--ink-900);}
+.bc-dt{font-size:11px;color:var(--muted);}
+.bc-rt{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);}
+.bc-rt svg{width:13px;height:13px;fill:var(--muted);}
+.read-btn{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;color:var(--blue);}
+.read-btn:hover{text-decoration:underline;}
+
+/* FOOTER */
+footer{background:var(--ink-900);color:rgba(255,255,255,.55);padding:56px 6% 28px;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:48px;margin-bottom:40px;}
+footer h4{font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;}
+footer ul{list-style:none;}
+footer ul li{font-size:13px;margin-bottom:8px;}
+.fb-bot{display:flex;align-items:center;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding-top:20px;font-size:12px;}
+.fb-social{display:flex;gap:16px;}
+.fb-social a{font-size:12px;color:rgba(255,255,255,.4);}
+.fb-social a:hover{color:#fff;}
+@media(max-width:768px){
+  .ft{grid-template-columns:1fr 1fr;}
+  nav{grid-template-columns:auto 1fr;}
+  .nav-pill,.nav-actions{display:none;}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalClinic",
+      "@id": "https://erzincandishekimi.com.tr/#dentist",
+      "name": "Erzincan Diş Hekimi – Dt. Mustafa ÇINAR",
+      "url": "https://erzincandishekimi.com.tr",
+      "telephone": "+90-446-224-10-89"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://erzincandishekimi.com.tr/#dentist-person",
+      "name": "Mustafa ÇINAR",
+      "honorificPrefix": "Dt.",
+      "jobTitle": "Diş Hekimi",
+      "worksFor": {"@id": "https://erzincandishekimi.com.tr/#dentist"}
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://erzincandishekimi.com.tr/dis-klinigi"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://erzincandishekimi.com.tr/blog"}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="/" class="nav-brand">
+    <div class="icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 3.5 6.5 5.5 5.5 4.5 4 4 3 5 1.5 6.5 2 9 3 11c1 2 2 3.5 2.5 5 .5 1.5.5 3.5 1.5 5.5.5 1 1.5 1.5 2.5 1C10.5 22 11 21 12 21s1.5 1 2.5 1.5c1 .5 2 0 2.5-1C18 19.5 18 17.5 18.5 16c.5-1.5 1.5-3 2.5-5 1-2 1.5-4.5 0-6-1-1-2.5-.5-3.5.5C16.5 3.5 14.5 2 12 2Z"/></svg>
+    </div>
+    <div>
+      <div>Erzincan <em style="font-style:normal;color:var(--blue);">Diş Hekimi</em></div>
+      <div class="line2">Dt. Mustafa ÇINAR</div>
+    </div>
+  </a>
+  <ul class="nav-pill">
+    <li><a href="dis-klinigi#hizmetler">Hizmetler</a></li>
+    <li><a href="dis-klinigi#hakkimizda">Hakkımızda</a></li>
+    <li><a href="blog" class="active">Blog</a></li>
+    <li><a href="dis-klinigi#sss">SSS</a></li>
+    <li><a href="dis-klinigi#yorumlar">Yorumlar</a></li>
+    <li><a href="dis-klinigi#randevu">İletişim</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="tel:+904462241089" class="nav-tel">
+      <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C9.6 21 3 14.4 3 6c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+      0446 224 10 89
+    </a>
+    <a href="dis-klinigi#randevu" class="nav-cta">Randevu Al</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <div class="chip"><span class="dot"></span>Blog & Makaleler</div>
+  <h1>Diş Sağlığı <span>Rehberiniz</span></h1>
+  <p>Uzman doktorlarımızdan faydalı bilgiler, ipuçları ve güncel diş sağlığı haberleri.</p>
+</div>
+
+<!-- FİLTRE -->
+<div class="filters">
+  <button class="active" onclick="filterBlog(this,'all')">Tümü</button>
+  <button onclick="filterBlog(this,'koruyucu')">Koruyucu Bakım</button>
+  <button onclick="filterBlog(this,'estetik')">Estetik</button>
+  <button onclick="filterBlog(this,'implant')">İmplant</button>
+  <button onclick="filterBlog(this,'cocuk')">Çocuk Diş</button>
+</div>
+
+<!-- BLOG GRİD -->
+<div class="blog-grid" id="blogGrid">
+
+  <a class="bc" data-cat="koruyucu" href="makale-1">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#0ea5e9,#22d3ee);"></div><div class="bc-img-icon">🦷</div><div class="bc-badge">Koruyucu Bakım</div></div>
+    <div class="bc-body">
+      <h3>Günlük Diş Fırçalamada Yapılan 7 Hata</h3>
+      <p>Yanlış fırçalama teknikleri dişleri korumak yerine zarar verebilir. Uzmanlarımızdan doğru rehber.</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#3b9eff,#22d3ee);">AY</div><div><div class="bc-an">Dr. Ayşe Yılmaz</div><div class="bc-dt">24 Nisan 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>5 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+  <a class="bc" data-cat="estetik" href="makale-2">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#db2777,#e879f9);"></div><div class="bc-img-icon">💎</div><div class="bc-badge">Estetik</div></div>
+    <div class="bc-body">
+      <h3>Veneer mi, Beyazlatma mı? Doğru Seçim</h3>
+      <p>İki popüler estetik tedavi arasındaki temel farklar, avantajlar ve sizin için hangisinin uygun olduğu.</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#db2777,#e879f9);">MK</div><div><div class="bc-an">Dr. Mert Kaya</div><div class="bc-dt">18 Nisan 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>7 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+  <a class="bc" data-cat="implant" href="makale-3">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#0d9488,#2dd4bf);"></div><div class="bc-img-icon">🔩</div><div class="bc-badge">İmplant</div></div>
+    <div class="bc-body">
+      <h3>İmplant Sonrası İlk Hafta: Nelere Dikkat?</h3>
+      <p>İyileşme sürecini hızlandıracak öneriler ve ameliyat sonrası kaçınılması gerekenler.</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#0d9488,#2dd4bf);">SA</div><div><div class="bc-an">Dr. Selim Arslan</div><div class="bc-dt">10 Nisan 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>6 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+  <a class="bc" data-cat="cocuk" href="makale-4">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#f59e0b,#fbbf24);"></div><div class="bc-img-icon">👶</div><div class="bc-badge">Çocuk Diş</div></div>
+    <div class="bc-body">
+      <h3>Çocuğunuzun Diş Korkusunu Yenmenin 5 Yolu</h3>
+      <p>Küçük çocuklarda sık görülen diş hekimi korkusunu sevgi dolu yöntemlerle aşmanın pratik yolları.</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#f59e0b,#f97316);">ZD</div><div><div class="bc-an">Dr. Zeynep Doğan</div><div class="bc-dt">3 Nisan 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>4 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+  <a class="bc" data-cat="koruyucu" href="makale-5">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);"></div><div class="bc-img-icon">🍎</div><div class="bc-badge">Koruyucu Bakım</div></div>
+    <div class="bc-body">
+      <h3>Diş Sağlığını Destekleyen 10 Süper Besin</h3>
+      <p>Doğru beslenme diş sağlığını doğrudan etkiler. Minenizi güçlendiren besinlerin tam listesi.</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#6366f1,#8b5cf6);">AY</div><div><div class="bc-an">Dr. Ayşe Yılmaz</div><div class="bc-dt">28 Mart 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>5 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+  <a class="bc" data-cat="estetik" href="makale-6">
+    <div class="bc-img"><div class="bc-img-bg" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6);"></div><div class="bc-img-icon">😃</div><div class="bc-badge">Estetik</div></div>
+    <div class="bc-body">
+      <h3>Gülüş Tasarımı: Dijital Simülasyondan Uygulamaya</h3>
+      <p>Modern diş estetiğinde gülüş tasarımı süreci adım adım nasıl işler?</p>
+      <div class="bc-foot">
+        <div class="bc-author"><div class="bc-av" style="background:linear-gradient(135deg,#1d4ed8,#3b9eff);">MK</div><div><div class="bc-an">Dr. Mert Kaya</div><div class="bc-dt">20 Mart 2026</div></div></div>
+        <div class="bc-rt"><svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm0 18c-4.4 0-8-3.6-8-8s3.6-8 8-8 8 3.6 8 8-3.6 8-8 8zm.5-13H11v6l5.2 3.2.8-1.3-4.5-2.7V7z"/></svg>8 dk</div>
+      </div>
+      <span class="read-btn">Devamını oku →</span>
+    </div>
+  </a>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+        <div style="width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C9.5 2 7.5 3.5 6.5 5.5 5.5 4.5 4 4 3 5 1.5 6.5 2 9 3 11c1 2 2 3.5 2.5 5 .5 1.5.5 3.5 1.5 5.5.5 1 1.5 1.5 2.5 1C10.5 22 11 21 12 21s1.5 1 2.5 1.5c1 .5 2 0 2.5-1C18 19.5 18 17.5 18.5 16c.5-1.5 1.5-3 2.5-5 1-2 1.5-4.5 0-6-1-1-2.5-.5-3.5.5C16.5 3.5 14.5 2 12 2Z"/></svg></div>
+        <div><div style="font-weight:800;font-size:15px;color:#fff;">Erzincan Diş Hekimi</div><div style="font-size:11px;color:rgba(255,255,255,.35);">Sağlıklı Gülüşler</div></div>
+      </div>
+      <p style="font-size:13px;line-height:1.7;">Erzincan'da implant, veneer, ortodonti ve estetik diş tedavilerinde güvenilir adresiniz.</p>
+    </div>
+    <div><h4>Hizmetler</h4><ul><li>Dental İmplant</li><li>Porselen Veneer</li><li>Diş Beyazlatma</li><li>Ortodonti</li><li>Çocuk Diş</li></ul></div>
+    <div><h4>Hızlı Linkler</h4><ul><li><a href="/">Ana Sayfa</a></li><li><a href="blog">Blog</a></li><li><a href="dis-klinigi#sss">SSS</a></li><li><a href="dis-klinigi#randevu">Randevu</a></li></ul></div>
+    <div><h4>İletişim</h4><ul><li>📞 0446 224 10 89</li><li>📧 info@erzincandishekimi.com</li><li>📍 Atatürk, Ordu Cd. Yergün apt Kat-1, 24000 Erzincan Merkez/Erzincan</li><li>🕐 Pzt–Cmt 09:00–19:00</li></ul></div>
+  </div>
+  <div class="fb-bot">
+    <span>© 2026 Erzincan Diş Hekimi. Tüm hakları saklıdır.</span>
+    <div class="fb-social"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">YouTube</a></div>
+  </div>
+</footer>
+
+<script>
+function filterBlog(btn,cat){
+  document.querySelectorAll('.filters button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.bc').forEach(c=>{
+    c.style.display=(cat==='all'||c.dataset.cat===cat)?'':'none';
+  });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gülüş Tasarımı: Dijital Simülasyondan Uygulamaya – Erzincan Diş Hekimi</title>
+<meta name="description" content="Dijital gülüş tasarımı süreci adım adım. Erzincan diş hekimi estetik uzmanı Dr. Mert Kaya tüm aşamaları anlatıyor.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--ink-900:#07111f;--ink-800:#0f2137;--blue:#3b9eff;--cyan:#22d3ee;--surf-2:#f6faff;--surf-3:#eaf2ff;--muted:#64748b;--border:rgba(59,158,255,.14);--r-sm:10px;--r:16px;--r-lg:24px;--shadow-sm:0 2px 12px rgba(7,17,31,.08);}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink-900);background:#fff;-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;}
+nav{position:sticky;top:0;z-index:100;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 5%;height:68px;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);}
+.nb{display:flex;align-items:center;gap:10px;font-weight:800;font-size:15px;}
+.ni{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;}
+.ni svg{width:18px;height:18px;fill:#fff;}
+.np{list-style:none;display:flex;gap:2px;background:var(--surf-3);border:1px solid var(--border);border-radius:40px;padding:5px;}
+.np li a{display:block;padding:6px 14px;border-radius:30px;font-size:13px;font-weight:500;color:var(--muted);transition:.2s;}
+.np li a:hover,.np li a.active{background:#fff;color:var(--ink-900);box-shadow:var(--shadow-sm);}
+.na{display:flex;align-items:center;gap:10px;justify-content:flex-end;}
+.ncta{background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;padding:9px 18px;border-radius:30px;font-size:13px;font-weight:700;}
+.hero{height:300px;background:linear-gradient(135deg,#1e3a8a,#3b82f6);display:flex;align-items:center;justify-content:center;text-align:center;}
+.hero-icon{font-size:72px;margin-bottom:12px;}
+.hero-badge{display:inline-block;background:rgba(0,0,0,.3);backdrop-filter:blur(8px);color:#fff;font-size:12px;font-weight:600;padding:4px 12px;border-radius:20px;margin-bottom:10px;}
+.hero h1{font-size:clamp(1.4rem,4vw,2.2rem);font-weight:900;color:#fff;line-height:1.2;max-width:600px;padding:0 20px;letter-spacing:-.5px;}
+.body{max-width:720px;margin:0 auto;padding:48px 24px 80px;}
+.back{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--blue);margin-bottom:28px;}
+.meta{display:flex;align-items:center;gap:14px;margin-bottom:36px;padding-bottom:24px;border-bottom:1px solid var(--border);}
+.av{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#1d4ed8,#3b9eff);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#fff;flex-shrink:0;}
+.meta-info{flex:1;}
+.meta-name{font-size:14px;font-weight:700;}
+.meta-sub{font-size:12px;color:var(--muted);margin-top:2px;}
+.meta-rt{font-size:12px;color:var(--muted);}
+h2{font-size:1.25rem;font-weight:800;margin:36px 0 12px;}
+p{font-size:15.5px;line-height:1.8;color:#334155;margin-bottom:16px;}
+ul{padding-left:22px;margin-bottom:16px;}
+ul li{font-size:15.5px;line-height:1.8;color:#334155;margin-bottom:6px;}
+.tip{background:var(--surf-2);border-left:3px solid var(--blue);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:16px 20px;margin:24px 0;font-size:14.5px;color:#1a3352;line-height:1.7;}
+.phase{display:flex;flex-direction:column;gap:0;margin:24px 0;}
+.ph-item{display:flex;gap:16px;padding-bottom:28px;position:relative;}
+.ph-item:not(:last-child)::before{content:'';position:absolute;left:15px;top:34px;bottom:0;width:2px;background:var(--border);}
+.ph-dot{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0;margin-top:2px;}
+.ph-content h4{font-size:15px;font-weight:700;margin-bottom:6px;}
+.ph-content p{font-size:14px;color:var(--muted);margin-bottom:0;}
+.cta-box{background:linear-gradient(135deg,var(--ink-900),var(--ink-800));border-radius:var(--r-lg);padding:36px;text-align:center;margin-top:52px;}
+.cta-box h3{font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:8px;}
+.cta-box p{font-size:14px;color:rgba(255,255,255,.5);margin-bottom:22px;}
+.cta-btn{display:inline-block;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;padding:12px 28px;border-radius:30px;font-size:14px;font-weight:700;}
+footer{background:var(--ink-900);color:rgba(255,255,255,.5);padding:28px 6%;text-align:center;font-size:13px;}
+footer a{color:rgba(255,255,255,.4);margin:0 8px;}
+@media(max-width:768px){nav{grid-template-columns:auto 1fr;}.np,.na{display:none;}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nb">
+    <div class="ni"><svg viewBox="0 0 24 24"><path d="M12 2C9.5 2 7.5 3.5 6.5 5.5 5.5 4.5 4 4 3 5 1.5 6.5 2 9 3 11c1 2 2 3.5 2.5 5 .5 1.5.5 3.5 1.5 5.5.5 1 1.5 1.5 2.5 1C10.5 22 11 21 12 21s1.5 1 2.5 1.5c1 .5 2 0 2.5-1C18 19.5 18 17.5 18.5 16c.5-1.5 1.5-3 2.5-5 1-2 1.5-4.5 0-6-1-1-2.5-.5-3.5.5C16.5 3.5 14.5 2 12 2Z"/></svg></div>
+    <div><div>Erzincan <em style="font-style:normal;color:var(--blue);">Diş Hekimi</em></div><div style="font-size:11px;color:var(--muted);">Sağlıklı Gülüşler</div></div>
+  </a>
+  <ul class="np">
+    <li><a href="dis-klinigi#hizmetler">Hizmetler</a></li>
+    <li><a href="dis-klinigi#hakkimizda">Hakkımızda</a></li>
+    <li><a href="blog" class="active">Blog</a></li>
+    <li><a href="dis-klinigi#sss">SSS</a></li>
+    <li><a href="dis-klinigi#yorumlar">Yorumlar</a></li>
+    <li><a href="dis-klinigi#randevu">İletişim</a></li>
+  </ul>
+  <div class="na"><a href="dis-klinigi#randevu" class="ncta">Randevu Al</a></div>
+</nav>
+
+<div class="hero">
+  <div><div class="hero-icon">😃</div><div class="hero-badge">Estetik</div><h1>Gülüş Tasarımı: Dijital Simülasyondan Uygulamaya</h1></div>
+</div>
+
+<div class="body">
+  <a class="back" href="blog">← Blog'a Dön</a>
+  <div class="meta">
+    <div class="av">MK</div>
+    <div class="meta-info">
+      
+      <div class="meta-sub">20 Mart 2026 · Estetik Diş Hekimliği</div>
+    </div>
+    <div class="meta-rt">⏱ 8 dk okuma</div>
+  </div>
+
+  <p>Gülüş tasarımı (Smile Design), dişlerin rengi, şekli, konumu ve oranları ile yüz estetiğini bir bütün olarak ele alan kapsamlı bir estetik diş hekimliği yaklaşımıdır. Modern teknoloji sayesinde artık tedaviye başlamadan önce sonucu dijital ortamda görmek mümkündür.</p>
+
+  <h2>Dijital Gülüş Tasarımı Nedir?</h2>
+  <p>DSD (Digital Smile Design), hastanın fotoğraf ve videolarını analiz eden yazılımlar aracılığıyla ideal gülüşün bilgisayar ortamında tasarlanmasıdır. Tedavi planı hekimle birlikte adım adım oluşturulur; hastanın yüz hatları, dudak çizgisi ve dişlerin oransal ilişkisi göz önünde bulundurulur.</p>
+
+  <h2>Gülüş Tasarımı Süreci — Adım Adım</h2>
+  <div class="phase">
+    <div class="ph-item">
+      <div class="ph-dot">1</div>
+      <div class="ph-content"><h4>Konsültasyon ve Fotoğraflama</h4><p>Standart açılardan yüz ve gülüş fotoğrafları çekilir; beklenti ve istekler ayrıntılı şekilde değerlendirilir.</p></div>
+    </div>
+    <div class="ph-item">
+      <div class="ph-dot">2</div>
+      <div class="ph-content"><h4>Dijital Tasarım</h4><p>DSD yazılımı ile yeni gülüşün simülasyonu yapılır. Hasta, tedavi başlamadan önce sonucu görür ve onaylar.</p></div>
+    </div>
+    <div class="ph-item">
+      <div class="ph-dot">3</div>
+      <div class="ph-content"><h4>Mock-up Uygulama</h4><p>Dijital tasarım, kompozit bir materyal ile geçici olarak dişlere uygulanır. Hasta 1–2 hafta "deneme gülüşü" ile yaşar.</p></div>
+    </div>
+    <div class="ph-item">
+      <div class="ph-dot">4</div>
+      <div class="ph-content"><h4>Final Uygulama</h4><p>Mock-up onaylandıktan sonra kalıcı veneer, kron veya implant uygulamaları gerçekleştirilir.</p></div>
+    </div>
+    <div class="ph-item">
+      <div class="ph-dot">5</div>
+      <div class="ph-content"><h4>Kontrol ve Bakım</h4><p>Yıllık kontrol randevularıyla uzun vadeli estetik ve sağlık takibi yapılır.</p></div>
+    </div>
+  </div>
+
+  <h2>Gülüş Tasarımında Kullanılan Tedaviler</h2>
+  <ul>
+    <li>Porselen veneer — renk, şekil ve boyut düzeltme</li>
+    <li>Diş beyazlatma — yüzey renklenmeleri</li>
+    <li>Zirkonyum kron — büyük yapısal hasarlarda</li>
+    <li>Ortodonti — diş dizilim bozuklukları</li>
+    <li>Dişeti düzeltme (gingivektomi) — gülüş çizgisi estetiği</li>
+    <li>Dental implant — eksik dişlerin tamamlanması</li>
+  </ul>
+
+  <h2>Kim İçin Uygundur?</h2>
+  <p>Gülüş tasarımı; renk, şekil ve dizilim problemleri yaşayan, estetik memnuniyetsizliği olan ya da önemli bir sosyal veya profesyonel etkinlik öncesinde gülüşünü dönüştürmek isteyen herkese uygulanabilir. Herhangi bir yaş kısıtlaması yoktur.</p>
+
+  <div class="tip">💡 Erzincan diş kliniğimizde ücretsiz DSD konsültasyonuyla yeni gülüşünüzü birlikte tasarlıyoruz. Erzincan, Üzümlü, Refahiye ve çevre ilçelerden gelen hastalarımıza özel saat imkânı mevcuttur.</div>
+
+  <div class="cta-box">
+    <h3>Gülüşünüzü Tasarlamaya Başlayın</h3>
+    <p>Ücretsiz dijital gülüş simülasyonu için randevunuzu oluşturun.</p>
+    <a class="cta-btn" href="dis-klinigi#randevu">Randevu Al →</a>
+  </div>
+</div>
+
+<footer>
+  <span>© 2026 Erzincan Diş Hekimi</span>
+  <a href="/">Ana Sayfa</a>
+  <a href="blog">Blog</a>
+  <a href="dis-klinigi#randevu">Randevu</a>
+</footer>
+</body>
+</html>
